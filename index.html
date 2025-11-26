@@ -1,9 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Sensibilisation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sensibilisation Phishing</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #0e0e0f;
+      color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      animation: fadeIn 1.2s ease;
+      padding: 40px;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 20px rgba(0, 150, 255, 0.2);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      color: #ff4c4c;
+      text-shadow: 0 0 8px rgba(255, 80, 80, 0.8);
+    }
+
+    p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .pulse {
+      animation: pulse 1.8s infinite;
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #00b7ff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { opacity: 0.3; }
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 12px 26px;
+      background: #00b7ff;
+      color: black;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.2s;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #008ac4;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Bienvenue sur la page de sensibilisation 🎓</h1>
+  <div class="container">
+    <h1>Tu t'es fait phisher 🎣</h1>
+    <p>
+      Ce test avait pour objectif de vérifier ta vigilance face aux emails suspects.<br>
+      Pas de panique — aucun risque réel.<br><br>
+      L’objectif : t’aider à reconnaître les signaux d’alerte pour mieux te protéger.
+    </p>
+
+    <div class="pulse">Rappelle-toi : mieux vaut vérifier deux fois qu’être piégé une fois.</div>
+
+    <a class="btn" href="https://sensibilisation.hozzeo.site">En savoir plus</a>
+  </div>
 </body>
 </html>
